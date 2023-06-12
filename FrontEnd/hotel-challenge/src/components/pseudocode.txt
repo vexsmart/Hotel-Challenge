@@ -1,0 +1,17 @@
+create multiple components with their given logic, and these components will
+reference container with buttons wich will call the api, when clicked one of this buttons 
+it will show a window inside a modal where, depending on the call , will have
+a form for posting and putting data in the DataBase.
+
+the properties of the form will be, 
+
+if(API_TYPE == POST){
+    an input with a number property(this will be the room number) check if room number already exists.
+    an input property to set if it is located or free
+}
+
+if(API_TYPE == PUT){
+    an input to change the status(only two options: LOCADO, LIVRE);
+}
+
+the Apicontroller must be a hub of links to to different fetch components.
